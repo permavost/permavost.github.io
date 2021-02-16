@@ -137,8 +137,9 @@ nav a:hover {
 }
 
 .footer-container footer {
-    color: white;
+    color: rgb(114, 112, 112);
     padding: 20px 0;
+    font-size: 80%;
 }
 
 /* ===============
