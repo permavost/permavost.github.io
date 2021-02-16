@@ -85,7 +85,7 @@ body {
 }
 
 .title {
-    color: white;
+    color: #000;
 }
 
 /* ==============
@@ -107,8 +107,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 
-    color: white;
-    background: #e44d26;
+    color: #000;
 }
 
 nav a:hover,
@@ -133,7 +132,7 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: #000;
     padding: 0px 5% 10px;
 }
 
