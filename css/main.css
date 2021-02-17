@@ -47,7 +47,7 @@ textarea {
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #0d0c22;
     padding: 0.2em 0;
 }
 
@@ -57,7 +57,7 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px "Work Sans", Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -73,6 +73,11 @@ body {
     /*border-bottom: 20px solid #e44d26;*/
 }
 
+.header-container h1 {
+    margin: 20px 0 0 0;
+}
+
+
 .footer-container,
 .main aside {
     /*border-top: 20px solid #e44d26;*/
@@ -85,12 +90,12 @@ body {
 }
 
 .title {
-    color: #000;
+    color: #0d0c22;
 }
 
 /* ==============
     MOBILE: Menu
-   ============== */
+   ============== */   
 
 nav ul {
     margin: 0;
@@ -101,22 +106,21 @@ nav ul {
 nav a {
     display: block;
     margin-bottom: 10px;
-    padding: 15px 0;
 
     text-align: center;
     text-decoration: none;
     font-weight: bold;
 
-    color: #000;
+    color: #0d0c22;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav li:hover {
+    border-bottom: 1px solid #0d0c22;
 }
 
 /* ==============
@@ -132,7 +136,7 @@ nav a:hover {
 }
 
 .main aside {
-    color: #000;
+    color: #0d0c22;
     padding: 0px 5% 10px;
 }
 
@@ -180,10 +184,11 @@ nav a:hover {
 
     nav a {
         float: left;
-        width: 8%;
+        width: 10%;
         margin: 0 1.7%;
-        padding: 25px 2%;
+        padding: 0 50px 0px 0px 2%
         margin-bottom: 0;
+        text-align: left;
     }
 
     nav li:first-child a {
@@ -229,8 +234,12 @@ nav a:hover {
     }
 
     nav {
-        float: right;
         width: 100%;
+        float: left;
+    }
+
+    nav li {
+        margin:0px;
     }
 
 /* ============
@@ -317,7 +326,7 @@ nav a:hover {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
+        color: #0d0c22 !important;
         box-shadow: none !important;
         text-shadow: none !important;
     }
