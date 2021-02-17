@@ -132,8 +132,8 @@ nav a {
     color: #0d0c22;
 }
 
-nav a:hover,
-nav a:visited {
+nav a:hover {
+    color: #6680BD;
     border-bottom: 3px solid #6680BD;
 }
 
@@ -173,6 +173,14 @@ section#collab a {
     padding-bottom: 20px;
 }
 
+.header-container h1 {
+    color: #6680BD;
+}
+
+span.clr {
+    color: #6680BD;    
+}
+
 
 /* ==========================================================================
    Media Queries
@@ -194,9 +202,8 @@ section#collab a {
 
     nav a {
         float: left;
-        width: 10%;
         margin: 0 1.7%;
-        padding: 10px 20px 10px 0px;
+        padding: 10px 0px 10px 0px;
         margin-bottom: 0;
         text-align: left;
     }
