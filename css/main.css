@@ -154,6 +154,11 @@ nav a:hover {
     padding: 0px 5% 10px;
 }
 
+.main aside section.announcement {
+		padding: 10px 30px 30px 30px;
+		background:#FCF3CF;
+}
+
 .footer-container footer {
     color: rgb(114, 112, 112);
     padding: 20px 0;
