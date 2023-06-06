@@ -102,79 +102,84 @@
                             <li>Accepted papers will be published in the workshop proceeding as part of the ACM Digital Library</li>
                         </ul>
                     </section>
-                    <section id="program" style="display:none;">
+                    <section id="program">
                     	<h2>Program</h2>
                     	<h3>Keynote Speech:</h3>
                     	<table>
                     		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/fsuter.jpg" width="100px" style="border-radius:50%"></img></td>
+                    			<td style="width: 120px;padding: 7px 0;"><img src="img/thoefler.jpg" width="100px" style="border-radius:50%"></img></td>
                     			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Frederic Suter</strong></p>
-                    				<p style="margin:0px;">Oak Ridge National Laboratory</p>
+                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Torsten Hoefler</strong></p>
+                    				<p style="margin:0px;">ETH Zurich</p>
                     			</td>
                     		</tr>
                     	</table>
-                    	<p><strong style="color: #222;">"Performance Evaluation Through Simulation with SimGrid"</strong></p>
+                    	<p><strong style="color: #222;">"DaCe.Python: Performance Engineering for Spatial Computers"</strong></p>
                     	<p>In most scientific domains, results are now obtained thanks to computational science that heavily relies on numerical simulations. This in turn leads to a tremendous increase in size and complexity of the underlying computing infrastructures. The performance assessment of such distributed systems and the applications they run is then a complex task for which various approaches can be considered. This talk will give a general overview of these approaches for the performance assessment of distributed systems and applications: experimentation, emulation, and simulation. It will specifically focus on the main features and strengths of the SimGrid toolkit. SimGrid is a 20+ year old research project whose scope has broaden over the years from the simulation of computing grids to P2P systems, clouds, and HPC. It will introduce the two main programming APIs, the underlying (in)validated models, and present some of the tools based on SimGrid that are currently available.</p>
-						<p>Frederic Suter is a Senior Research Scientist in the Workflow Systems Group at Oak Ridge National Laboratory since February 2022. Before thta, he has been a CNRS researcher at the IN2P3 Computing Center in Lyon, France, for thirteen years where he led the research team of the center.  His research interests include scheduling, scientific workflows, data science and platform and application simulation. He co-authored more than 50 publications.  He obtained his Ph.D. from the Ecole Normale Supérieure de Lyon, France, in 2002 and his Habilitation to supervise research From the Ecole Normale Supérieure de Lyon in 2014. He is also one of the main developers of the SimGrid project.</p>
+						<p>Torsten Hoefler is a Professor of Computer Science at ETH Zurich, a member of Academia Europaea, and a Fellow of the ACM and IEEE. His research interests revolve around the central topic of "Performance-centric System Design" and include scalable networks, parallel programming techniques, and performance modeling. Torsten won best paper awards at the ACM/IEEE Supercomputing Conference SC10, SC13, SC14, SC19, SC22, EuroMPI'13, HPDC'15, HPDC'16, IPDPS'15, and other conferences. He published numerous peer-reviewed scientific conference and journal articles and authored chapters of the MPI-2.2 and MPI-3.0 standards. He received the IEEE CS Sidney Fernbach Award, the ACM Gordon Bell Prize, the ISC Jack Dongarra award, the Latsis prize of ETH Zurich, as well as both ERC starting and consolidator grants. Additional information about Torsten can be found on his homepage at htor.inf.ethz.ch.</p>
 											<br/>
 											<h3>Invited Speech:</h3>
 											<table>
 											<tr>
-												<td style="width: 120px;padding: 7px 0;"><img src="img/kisaacs.jpg" width="100px" style="border-radius:50%"></img></td>
+												<td style="width: 120px;padding: 7px 0;"><img src="img/adubey.png" width="100px" style="border-radius:50%"></img></td>
 												<td>
-													<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Katherine Isaacs</strong></p>
-													<p style="margin:0px;">University of Arizona</p>
+													<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Anshu Dubey</strong></p>
+													<p style="margin:0px;">Argonne National Laboratory</p>
 												</td>
 											</tr>
 											</table>
-											<p><strong style="color: #222;">"Integrating Visualization (and Visualization Experts) with Performance Analysis"</strong></p>
-											<p>Identifying and understanding poor performance is an increasingly difficult task due to the growing complexity and scale of target applications and systems. Visualization is an important tool for exploratory and comprehension-centered goals, leading to development of visualizations and visual tools from both the performance analysis and visualization communities. However, there are several obstacles to wide-spread adoption of these visual tools and techniques, such as scale and ease-of-use. Furthermore, the challenge of visualizing such large and complex data often takes precedence over the other challenges that must be solved to get these tools into the hands of users. Addressing these issues requires making trade-offs which in turn require a firm understanding of performance analysts’ needs and workflows. Through several projects in performance visualization, I discuss observed barriers to designing and deploying performance visualization solutions as well as the perspective of visualization-focused experts in working in the performance analysis space. I then propose directions focusing on these gaps between the visual design and integration into performance analysis workflows.</p>
-											<p>Kate Isaacs is an assistant professor at the University of Arizona. Her interests include data visualization and high performance computing. She focuses on visualization challenges in complex exploratory analysis scenarios such as those of active research teams. These challenges include representational and interactive scalability concerns for networks and timelines, integrating interactive visualizations in scripting workflows, and improving visualization methodologies for such projects. Kate has collaborated with researchers in high performance computing, distributed computing, data science, program analysis, optimization, and environmental planning. Her work is supported by the NSF and DOE, including an NSF CRII award in 2017, an NSF CAREER award in 2019, and a DOE Early Career Research Program award in 2021.</p>
+											<p><strong style="color: #222;">"Performance portability without relying on C++ based abstractions"</strong></p>
+											<p>Scientific software used on high performance computing (HPC) platforms is in a phase of transformation because of combined increase in the heterogeneity and complexity of models and hardware platforms. Having separate implementations for different platforms is not an option, therefore, computational science community has been looking for mechanisms to express code through abstractions that can be specialized for different platforms. Some approaches have met success through the use of template meta-programming in C++. However, their reliance upon C++ makes these approaches inaccessible to the non C++ codes. In this presentation, we describe a methodology and a set of tools for performance portability that we are developing for applications in any language. The tools also provide mechanism for mapping computation to different devices on a node, and a mechanism for orchestrating the data movement.</p>
+											<p>Anshu Dubey is a Senior Computational Scientist in Mathematics and Computer Science Division at Argonne National Laboratory, and a Senior Scientist in the Computer Science Department at the University of Chicago. Her research interests include design, architecture, and sustainability of multiphysics scientific software used on high performance computing platforms. She leads the development of Flash-X, a Multiphysics code designed for use on heterogeneous platforms.</p>
+											<br/>
+											<table>
+											<tr>
+												<td style="width: 120px;padding: 7px 0;"><img src="img/hsubramoni.jpg" width="100px" style="border-radius:50%"></img></td>
+												<td>
+													<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Hari Subramoni</strong></p>
+													<p style="margin:0px;">Ohio State University</p>
+												</td>
+											</tr>
+											</table>
+											<p><strong style="color: #222;">"Hey CAI - Conversational AI Enabled User Interface for HPC Tools"</strong></p>
+											<p>HPC system users depend on profiling and analysis tools to obtain insights into the performance of their applications and tweak them. The complexity of modern HPC systems have necessitated advances in the associated HPC tools making them equally complex with various advanced features and complex user interfaces. While these interfaces are extensive and detailed, they require a steep learning curve even for expert users making them harder to use for novice users. While users are intuitively able to express what they are looking for in words or text (e.g., show me the process transmitting maximum data), they find it hard to quickly adapt to, navigate, and use the interface of advanced HPC tools to obtain desired insights. In this talk, we present the challenges associated with designing a conversational (speech/text) interface for HPC tools. We use state-of-the-art AI models for speech and text and adapt it for use in the HPC arena by retraining them on a new HPC dataset we create. We demonstrate that our proposed model, retrained with an HPC specific dataset, can deliver higher accuracy than the existing state-of-the-art pre-trained language models. We also create an interface to convert speech/text data to commands for HPC tools and show how users can utilize the proposed interface to gain insights quicker leading to better productivity. To the best of our knowledge, this is the first effort aimed at designing a conversational interface for HPC tools using state-of-the-art AI techniques to enhance the productivity of novice and advanced users alike.</p>
+											<p>Hari Subramoni is an assistant professor in the Department of Computer Science and Engineering at the Ohio State University, USA. His current research interests include high performance interconnects and protocols, parallel computer architecture, network-based computing, exascale computing, network topology aware computing, QoS, power-aware LAN-WAN communication, fault tolerance, virtualization, big data, deep/machine learning, conversational interfaces, and cloud computing. He has published over 130 papers in international journals and conferences related to these research areas. He is a member of ACM and IEEE</p>
 											<br/>
 											<h3>Paper Presentation:</h3>
 											<ul>
-												<li><strong>An Overhead Analysis of MPI Profiling and Tracing Tools
-</strong> - Sacha Hunold (TU Wien), Jordy I. Ajanohoun (TU Wien), Ioannis Vardas (TU Wien), Jesper Larsson Traeff (TU Wien)</li>
-												<li><strong>Server-Side Workload Identification for HPC I/O Requests
-</strong> - Lu Pang (Temple University), Krishna Kant (Temple University)</li>
+												<li><strong>HPC Application Performance Prediction with Machine Learning on New Architectures
+</strong> - Dewi Yokelson (University of Oregon), Marc Robert Joseph Charest (Microsoft), Ying Wai Li (Los Alamos National Laboratory)</li>
 											</ul>
 											<p>*Each paper presentation will be followed by Q&A session</p>
 											<br/>
 											<h3>Discussion Panel: </h3>
 											<table>
                     		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/kkeipert.jpg" width="100px" style="border-radius:50%"></img></td>
+                    			<td style="width: 120px;padding: 7px 0;"><img src="img/jlofstead.jpg" width="100px" style="border-radius:50%"></img></td>
                     			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Kristopher Keipert</strong></p>
-                    				<p style="margin:0px;">NVIDIA, USA</p>
+                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Jay Lofstead</strong></p>
+                    				<p style="margin:0px;">Sandia National Laboratory, USA</p>
                     			</td>
                     		</tr>
                     		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/rdasilva.jpg" width="100px" style="border-radius:50%"></img></td>
+                    			<td style="width: 120px;padding: 7px 0;"><img src="img/sneuwirth.jpg" width="100px" style="border-radius:50%"></img></td>
                     			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Rafael Ferreira da Silva</strong></p>
-                    				<p style="margin:0px;">Oak Ridge National Laboratory, USA</p>
+                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Sarah Neuwirth</strong></p>
+                    				<p style="margin:0px;">Goethe University Frankfurt, Germany</p>
                     			</td>
                     		</tr>
                     		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/skesavan.jpg" width="100px" style="border-radius:50%"></img></td>
+                    			<td style="width: 120px;padding: 7px 0;"><img src="img/tallen.jpg" width="100px" style="border-radius:50%"></img></td>
                     			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Suraj Kesavan</strong></p>
-                    				<p style="margin:0px;">University of California, Davis, USA</p>
-                    			</td>
-                    		</tr>
-                    		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/tpatel.png" width="100px" style="border-radius:50%"></img></td>
-                    			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Thirtak Patel</strong></p>
-                    				<p style="margin:0px;">Rice University, USA</p>
+                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Tyler Allen</strong></p>
+                    				<p style="margin:0px;">University of North Carolina, Charlotte, USA</p>
                     			</td>
                     		</tr>
                     	</table>
-											<p><strong style="color: #222;">"Domain Scientists vs. Performance Analysis Tools: Advancing in HPC"</strong></p>
-                    	<p>In this panel, a team of four experts in performance analysis, parallel computing, quantum computing, and distributed systems discuss how different scientific computing fields are benefiting from performance analysis tools. The panel will discuss challenges and limitations in today's available tools from the perspective of a tools developer, domain scientist, and solutions architect. An emphasis will be placed on evaluating the performance and visualizing experiments in rising fields in Computer Science such as Machine Learning and Quantum Computing in HPC infrastructures. The panel is in the format of questions and answers sessions given by the moderator combined with interactive communication with the audience. We encourage participants to join our interactive panel discussion</p>
+											<p><strong style="color: #222;">"Holistic performance engineering and analysis: from UX until low level performance data"</strong></p>
+                    	<p>In this panel, a team of three experts from different backgrounds will discuss challenges in achieving holistic performance engineering and analysis, whether a holistic approach is getting more important as HPC is getting more mainstream, and different perspective perceived by different stakeholders in different institutions. The panel is in the format of questions and answers sessions given by the moderator combined with interactive communication with the audience. We encourage participants to join our interactive panel discussion</p>
                     </section>
+                   
                     <hr>                    
                     <section id="organization">
                     	<h2>Workshop Chair</h2>

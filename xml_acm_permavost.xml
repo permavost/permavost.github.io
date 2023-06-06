@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<!DOCTYPE erights_record SYSTEM "https://cms.acm.org/paperLoad/paperLoad.dtd">
+<erights_record>
+	<parent_data>
+		<proceeding>2022-0001.0000</proceeding>
+		<volume/>
+		<issue/>
+		<issue_date/>
+		<source/>
+	</parent_data>
+	<paper>
+		<paper_type>Full Paper</paper_type>
+		<paper_title>An Overhead Analysis of MPI Profiling and Tracing Tools</paper_title>
+		<event_tracking_number>1</event_tracking_number>
+		<published_article_number/>
+		<start_page/>
+		<end_page/>
+		<authors>
+			<author>
+				<prefix/>
+				<first_name>Sacha</first_name>
+				<middle_name/>
+				<last_name>Hunold</last_name>
+				<suffix/>
+				<affiliations>
+					<affiliation>
+						<department/>
+						<institution>Vienna University of Technology</institution>
+						<city>Vienna</city>
+						<state_province/>					
+						<country>Austria</country>
+						<sequence_no>1</sequence_no>
+					</affiliation>
+				</affiliations>
+				<email_address>hunold@par.tuwien.ac.at</email_address>
+				<sequence_no>1</sequence_no>
+				<contact_author>Y</contact_author>
+				<ACM_profile_id/>				
+				<ACM_client_no/>
+				<ORCID/>
+			</author>
+			<author>
+				<prefix/>
+				<first_name>Jordy I.</first_name>
+				<middle_name/>
+				<last_name>Ajanohoun</last_name>
+				<suffix/>
+				<affiliations>
+					<affiliation>
+						<department/>
+						<institution>Vienna University of Technology</institution>
+						<city>Vienna</city>
+						<state_province/>					
+						<country>Austria</country>
+						<sequence_no>1</sequence_no>
+					</affiliation>
+				</affiliations>
+				<email_address>ajanohoun@par.tuwien.ac.at</email_address>
+				<sequence_no>2</sequence_no>
+				<contact_author>N</contact_author>
+				<ACM_profile_id/>				
+				<ACM_client_no/>
+				<ORCID/>
+			</author>
+			<author>
+				<prefix/>
+				<first_name>Ioannis</first_name>
+				<middle_name/>
+				<last_name>Vardas</last_name>
+				<suffix/>
+				<affiliations>
+					<affiliation>
+						<department/>
+						<institution>Vienna University of Technology</institution>
+						<city>Vienna</city>
+						<state_province/>					
+						<country>Austria</country>
+						<sequence_no>1</sequence_no>
+					</affiliation>
+				</affiliations>
+				<email_address>vardas@par.tuwien.ac.at</email_address>
+				<sequence_no>3</sequence_no>
+				<contact_author>Y</contact_author>
+				<ACM_profile_id/>				
+				<ACM_client_no/>
+				<ORCID/>
+			</author>
+			<author>
+				<prefix/>
+				<first_name>Jesper-Larsson</first_name>
+				<middle_name/>
+				<last_name>Träff</last_name>
+				<suffix/>
+				<affiliations>
+					<affiliation>
+						<department/>
+						<institution>Vienna University of Technology</institution>
+						<city>Vienna</city>
+						<state_province/>					
+						<country>Austria</country>
+						<sequence_no>1</sequence_no>
+					</affiliation>
+				</affiliations>
+				<email_address>traff@par.tuwien.ac.at</email_address>
+				<sequence_no>4</sequence_no>
+				<contact_author>Y</contact_author>
+				<ACM_profile_id/>				
+				<ACM_client_no/>
+				<ORCID/>
+			</author>
+		</authors>
+		<section></section>
+		<sequence_no>1</sequence_no>
+	</paper>
+	<paper>
+		<paper_type>Full Paper</paper_type>
+		<paper_title>Server-Side Workload Identification for HPC I/O Requests</paper_title>
+		<event_tracking_number>2</event_tracking_number>
+		<published_article_number>2</published_article_number>
+		<start_page/>
+		<end_page/>
+		<authors>
+			<author>
+				<prefix/>
+				<first_name>Lu</first_name>
+				<middle_name/>
+				<last_name>Pang</last_name>
+				<suffix/>
+				<affiliations>
+					<affiliation>
+						<department/>
+						<institution>Temple University</institution>
+						<city>Philadelphia</city>
+						<state_province/>					
+						<country>United States</country>
+						<sequence_no>1</sequence_no>
+					</affiliation>
+				</affiliations>
+				<email_address>lpang@temple.edu</email_address>
+				<sequence_no>1</sequence_no>
+				<contact_author>Y</contact_author>
+				<ACM_profile_id/>				
+				<ACM_client_no/>
+				<ORCID/>
+			</author>
+			<author>
+				<prefix/>
+				<first_name>Krishna</first_name>
+				<middle_name/>
+				<last_name>Kant</last_name>
+				<suffix/>
+				<affiliations>
+					<affiliation>
+						<department/>
+						<institution>Temple University</institution>
+						<city>Philadelphia</city>
+						<state_province/>					
+						<country>United States</country>
+						<sequence_no>1</sequence_no>
+					</affiliation>
+				</affiliations>
+				<email_address>kkant@temple.edu	</email_address>
+				<sequence_no>2</sequence_no>
+				<contact_author>N</contact_author>
+				<ACM_profile_id/>				
+				<ACM_client_no/>
+				<ORCID/>
+			</author>
+		</authors>
+		<section></section>
+		<sequence_no>2</sequence_no>
+	</paper>
+</erights_record>
