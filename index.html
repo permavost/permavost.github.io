@@ -40,7 +40,7 @@
                     <ul>
                         <!-- let's make this single page javascript controlled link -->
                         <li><a href="index.html#about">ABOUT</a><li>
-						<li><a href="index.html#schedule">SCHEDULE</a></li>
+			<!-- <li><a href="index.html#schedule">SCHEDULE</a></li> -->
                         <li><a href="index.html#submission">SUBMISSION</a></li>
                         <li><a href="index.html#program">PROGRAM</a></li>
                         <li><a href="index.html#organization">ORGANIZATION</a></li>
@@ -88,7 +88,7 @@
                         </ul>
                     </section>
                     <hr>
-					<section id="schedule">
+			<section id="schedule" style="display:none;">
                         <h2>Program Schedule</h2>
                     	<ul>
                         	<li><strong>08:30 - 08:35</strong>  Welcome/Opening</li>
@@ -118,90 +118,62 @@
                             <li>Accepted papers will be published in the workshop proceeding as part of the ACM Digital Library</li>
                         </ul>
                     </section>
-                    <section id="program" style="display:none;">
+                    <section id="program">
                     	<h2>Program</h2>
+
+			<h3>Schedule:</h3>
+			<ul>
+				<li><strong>08:30 - 08:35</strong>  Welcome/Opening</li>
+				<li><strong>08:35 - 09:35</strong>  Keynote by Dhabaleswar K. (DK) Panda</li>
+				<li><strong>09:35 - 10:30</strong>  Invited Talk by Mathis Bode</li>
+				<li><strong>10:30 - 11:00</strong>  <strong>Coffee break</strong></li>				
+				<li><strong>11:10 - 11:40</strong>  Paper 1: "Cost-Efficient Construction of Performance Models" - L. Schmid, T. Sağlam, M. Selzer, A. Koziolek</li>
+				<li><strong>11:40 - 12:10</strong>  Paper 2: "Benchmarking Machine Learning Applications on Heterogeneous Architecture using Reframe" - C. Rae, J. Lee, J. Richings, M. Weiland</li>
+				<li><strong>12:10 - 12:40</strong>  Paper 3: "Using Benchmarking and Regression Models for Predicting CNN Training Time on a GPU" - P. Bryzgalov, T. Maeda</li>
+				<li><strong>12:40 - 13:00</strong>  Ending Remarks</li>				
+                    	</ul>
+			    
                     	<h3>Keynote Speech:</h3>
                     	<table>
                     		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/thoefler.jpg" width="100px" style="border-radius:50%"></img></td>
+                    			<td style="width: 120px;padding: 7px 0;"><img src="img/dkpanda.jpg" width="100px" style="border-radius:50%"></img></td>
                     			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Torsten Hoefler</strong></p>
-                    				<p style="margin:0px;">ETH Zurich</p>
+                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Dhabaleswar K. (DK) Panda</strong></p>
+                    				<p style="margin:0px;">Ohio State University</p>
                     			</td>
                     		</tr>
                     	</table>
-                    	<p><strong style="color: #222;">"DaCe.Python: Performance Metaprogramming Towards Spatial Computers"</strong></p>
-			    <p>Python has become the de-facto language for scientific computing. Programming in Python is highly productive, mainly due to its rich science-oriented software ecosystem built around the NumPy module. As a result, the demand for Python support in High Performance Computing (HPC) has skyrocketed. However, the Python language itself does not necessarily offer high performance. In this work, we present Data-Centric Python (DaCe.Python) that retains Python's high productivity while achieving portable performance across different architectures. The workflow's key features are HPC-oriented language extensions and a set of automatic optimizations powered by a data-centric intermediate representation. We also define a set of around 50 benchmark kernels written in NumPy to evaluate and compare Python frameworks for their portability and performance. We show performance results and scaling across CPU, GPU, FPGA, with 2.47x and 3.75x speedups over previous-best solutions and the first-ever Xilinx and Intel FPGA results of annotated Python.</p>
-						<p>Torsten Hoefler is a Professor of Computer Science at ETH Zurich, a member of Academia Europaea, and a Fellow of the ACM and IEEE. His research interests revolve around the central topic of "Performance-centric System Design" and include scalable networks, parallel programming techniques, and performance modeling. Torsten won best paper awards at the ACM/IEEE Supercomputing Conference SC10, SC13, SC14, SC19, SC22, EuroMPI'13, HPDC'15, HPDC'16, IPDPS'15, and other conferences. He published numerous peer-reviewed scientific conference and journal articles and authored chapters of the MPI-2.2 and MPI-3.0 standards. He received the IEEE CS Sidney Fernbach Award, the ACM Gordon Bell Prize, the ISC Jack Dongarra award, the Latsis prize of ETH Zurich, as well as both ERC starting and consolidator grants. Additional information about Torsten can be found on his homepage at htor.inf.ethz.ch.</p>
-			    <p><a href="files/hoefler-permavost-dace-python.pdf">Presentation slides</a></p>
-											<br/>
-											<h3>Invited Speech:</h3>
-											<table>
-											<tr>
-												<td style="width: 120px;padding: 7px 0;"><img src="img/adubey.png" width="100px" style="border-radius:50%"></img></td>
-												<td>
-													<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Anshu Dubey</strong></p>
-													<p style="margin:0px;">Argonne National Laboratory</p>
-												</td>
-											</tr>
-											</table>
-											<p><strong style="color: #222;">"Performance portability without relying on C++ based abstractions"</strong></p>
-											<p>Scientific software used on high performance computing (HPC) platforms is in a phase of transformation because of combined increase in the heterogeneity and complexity of models and hardware platforms. Having separate implementations for different platforms is not an option, therefore, computational science community has been looking for mechanisms to express code through abstractions that can be specialized for different platforms. Some approaches have met success through the use of template meta-programming in C++. However, their reliance upon C++ makes these approaches inaccessible to the non C++ codes. In this presentation, we describe a methodology and a set of tools for performance portability that we are developing for applications in any language. The tools also provide mechanism for mapping computation to different devices on a node, and a mechanism for orchestrating the data movement.</p>
-											<p>Anshu Dubey is a Senior Computational Scientist in Mathematics and Computer Science Division at Argonne National Laboratory, and a Senior Scientist in the Computer Science Department at the University of Chicago. Her research interests include design, architecture, and sustainability of multiphysics scientific software used on high performance computing platforms. She leads the development of Flash-X, a Multiphysics code designed for use on heterogeneous platforms.</p>
-			    								<p><a href="files/anshu-dubey-permavost-2023.pdf">Presentation slides</a></p>
-											
-			    <br/>
-											<table>
-											<tr>
-												<td style="width: 120px;padding: 7px 0;"><img src="img/hsubramoni.jpg" width="100px" style="border-radius:50%"></img></td>
-												<td>
-													<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Hari Subramoni</strong></p>
-													<p style="margin:0px;">Ohio State University</p>
-												</td>
-											</tr>
-											</table>
-											<p><strong style="color: #222;">"Hey CAI - Conversational AI Enabled User Interface for HPC Tools"</strong></p>
-											<p>HPC system users depend on profiling and analysis tools to obtain insights into the performance of their applications and tweak them. The complexity of modern HPC systems have necessitated advances in the associated HPC tools making them equally complex with various advanced features and complex user interfaces. While these interfaces are extensive and detailed, they require a steep learning curve even for expert users making them harder to use for novice users. While users are intuitively able to express what they are looking for in words or text (e.g., show me the process transmitting maximum data), they find it hard to quickly adapt to, navigate, and use the interface of advanced HPC tools to obtain desired insights. In this talk, we present the challenges associated with designing a conversational (speech/text) interface for HPC tools. We use state-of-the-art AI models for speech and text and adapt it for use in the HPC arena by retraining them on a new HPC dataset we create. We demonstrate that our proposed model, retrained with an HPC specific dataset, can deliver higher accuracy than the existing state-of-the-art pre-trained language models. We also create an interface to convert speech/text data to commands for HPC tools and show how users can utilize the proposed interface to gain insights quicker leading to better productivity. To the best of our knowledge, this is the first effort aimed at designing a conversational interface for HPC tools using state-of-the-art AI techniques to enhance the productivity of novice and advanced users alike.</p>
-											<p>Hari Subramoni is an assistant professor in the Department of Computer Science and Engineering at the Ohio State University, USA. His current research interests include high performance interconnects and protocols, parallel computer architecture, network-based computing, exascale computing, network topology aware computing, QoS, power-aware LAN-WAN communication, fault tolerance, virtualization, big data, deep/machine learning, conversational interfaces, and cloud computing. He has published over 130 papers in international journals and conferences related to these research areas. He is a member of ACM and IEEE</p>
-			<p id="video"><strong>Presentation Video:</strong></p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kH6wVidFLww" title="Hari Subramoni's PERMAVOST Presentation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>								
+                    	<p><strong style="color: #222;">"Designing High-Performance, Scalable, and Converged Middleware for HPC, AI, Big Data, and Data Sciences"</strong></p>
+			<p>Prof. DK Panda from Ohio State University. DK Panda is a Professor and University Distinguished Scholar of Computer Science and Engineering at the Ohio State University.  He is serving as the Director of the ICICLE NSF-AI Institute (https://icicle.ai). He has published over 500 papers. The MVAPICH2 MPI libraries, designed and developed by his research group (http://mvapich.cse.ohio-state.edu), are currently being used by more than 3,300 organizations worldwide (in 90 countries). More than 1.77 million downloads of this software have taken place from the project's site. This software empowers many clusters on the TOP500 list. High-performance and scalable solutions for Deep Learning frameworks and Machine Learning applications from his group are available at https://hidl.cse.ohio-state.edu. Similarly, scalable and high-performance solutions for Big Data and Data science frameworks are available from https://hibd.cse.ohio-state.edu. Prof. Panda is an IEEE Fellow and recipient of the 2022 IEEE Charles Babbage Award. More details about Prof. Panda are available at http://www.cse.ohio-state.edu/~panda.</p>
+			<!-- <p><a href="files/hoefler-permavost-dace-python.pdf">Presentation slides</a></p> -->
+			<br/>
 			    
-			    <br/>
-											<h3>Paper Presentation:</h3>
-											<ul>
-												<li><strong>HPC Application Performance Prediction with Machine Learning on New Architectures
-</strong> - Dewi Yokelson (University of Oregon), Marc Robert Joseph Charest (Microsoft), Ying Wai Li (Los Alamos National Laboratory)</li>
-											</ul>
-											<p>*The paper presentation will be followed by Q&A session</p>
-											<br/>
-											<h3>Discussion Panel: </h3>
-											<table>
-                    		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/jlofstead.jpg" width="100px" style="border-radius:50%"></img></td>
-                    			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Jay Lofstead</strong></p>
-                    				<p style="margin:0px;">Sandia National Laboratory, USA</p>
-                    			</td>
-                    		</tr>
-                    		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/sneuwirth.jpg" width="100px" style="border-radius:50%"></img></td>
-                    			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Sarah Neuwirth</strong></p>
-                    				<p style="margin:0px;">Goethe University Frankfurt, Germany</p>
-                    			</td>
-                    		</tr>
-                    		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/tallen.jpg" width="100px" style="border-radius:50%"></img></td>
-                    			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Tyler Allen</strong></p>
-                    				<p style="margin:0px;">University of North Carolina, Charlotte, USA</p>
-                    			</td>
-                    		</tr>
-                    	</table>
-											<p><strong style="color: #222;">"Holistic performance engineering and analysis: from UX until low level performance data"</strong></p>
-                    	<p>In this panel, a team of three experts from different backgrounds will discuss challenges in achieving holistic performance engineering and analysis, whether a holistic approach is getting more important as HPC is getting more mainstream, and different perspective perceived by different stakeholders in different institutions. The panel is in the format of questions and answers sessions given by the moderator combined with interactive communication with the audience. We encourage participants to join our interactive panel discussion</p>
-                    </section>
+			<h3>Invited Speech:</h3>
+			<table>
+				<tr>
+					<td style="width: 120px;padding: 7px 0;"><img src="img/mbode.png" width="100px" style="border-radius:50%"></img></td><td>
+					<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Mathis Bode</strong></p>
+					<p style="margin:0px;">Jülich Supercomputing Centre</p>
+					</td>
+				</tr>
+			</table>
+			<p><strong style="color: #222;">"JUPITER Research and Early Access Program (JUREAP) – Seeding Exascale in Europe!"</strong></p>
+			<p>The JUPITER Research and Early Access Program (JUREAP) will support early applications on JUPITER to utilize the machine most efficiently. We are building up and extending on experiences with previous systems at JSC to implement a holistic program. JUREAP will target collaboration with about 20 applications on JUPITER that are balanced in terms of methods (including AI) and scientific domains. JSC experts and application scientists will support optimization of use-cases to enable highly efficient execution and push the boundaries of high-performance computing (HPC) beyond the state of the art. JUREAP will not only enable full-scale runs, but also support their execution, analysis, and joint publications. This talk summarizes the current developments and plans in the context of JUREAP. It will also provide a general overview of JUPITER.
+</p>
+			<p>Mathis is a researcher at the Jülich Supercomputing Centre (JSC) at Forschungszentrum Jülich (FZJ) and head of JUREAP. He has a background in large-scale multi-physics simulations and artificial intelligence, particularly with application to turbulence, combustion and multiphase flows, and general HPC research. In particular, he is currently working on exascale simulations and workflows. His research has won several awards, and he has been PI in various European projects.
+</p>											
+			<br/>
+			    
+			<h3>Paper Presentation:</h3>
+			<ul>
+				<li><strong>Cost-Efficient Construction of Performance Models</strong> - L. Schmid, T. Sağlam, M. Selzer, A. Koziolek</li>
+				<li><strong>Benchmarking Machine Learning Applications on Heterogeneous Architecture using Reframe</strong> - C. Rae, J. Lee, J. Richings, M. Weiland</li>
+				<li><strong>Using Benchmarking and Regression Models for Predicting CNN Training Time on a GPU</strong> - P. Bryzgalov, T. Maeda</li>
+			</ul>
+			<p>*The paper presentation will be followed by Q&A session</p>
+			</section>
 		    <hr>
+			
                     <section id="organization">
                     	<h2>Workshop Chair</h2>
                     	<ul>
