@@ -105,57 +105,41 @@
 		    <hr>
                      <section id="program" style="display:none;">
                     	<h2>Program</h2>
-
-			<h3>Schedule:</h3>
-			<ul>
-				<li><strong>08:30 - 08:35</strong>  Welcome/Opening</li>
-				<li><strong>08:35 - 09:35</strong>  Keynote by Dhabaleswar K. (DK) Panda</li>
-				<li><strong>09:35 - 10:30</strong>  Invited Talk by Mathis Bode</li>
-				<li><strong>10:30 - 11:00</strong>  <strong>Coffee break</strong></li>				
-				<li><strong>11:10 - 11:40</strong>  Paper 1: "Cost-Efficient Construction of Performance Models" - L. Schmid, T. Sağlam, M. Selzer, A. Koziolek</li>
-				<li><strong>11:40 - 12:10</strong>  Paper 2: "Benchmarking Machine Learning Applications on Heterogeneous Architecture using Reframe" - C. Rae, J. Lee, J. Richings, M. Weiland</li>
-				<li><strong>12:10 - 12:40</strong>  Paper 3: "Using Benchmarking and Regression Models for Predicting CNN Training Time on a GPU" - P. Bryzgalov, T. Maeda</li>
-				<li><strong>12:40 - 13:00</strong>  Ending Remarks</li>				
-                    	</ul>
 			    
                     	<h3>Keynote Speech:</h3>
                     	<table>
                     		<tr>
-                    			<td style="width: 120px;padding: 7px 0;"><img src="img/dkpanda.jpg" width="100px" style="border-radius:50%"></img></td>
+                    			<td style="width: 120px;padding: 7px 0;"><img src="img/sun.jpg" width="100px" style="border-radius:50%"></img></td>
                     			<td>
-                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Dhabaleswar K. (DK) Panda</strong></p>
-                    				<p style="margin:0px;">Ohio State University</p>
+                    				<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Xian-He Sun</strong></p>
+                    				<p style="margin:0px;">Illinois Institute of Technology, Chicago, USA </p>
                     			</td>
                     		</tr>
                     	</table>
-                    	<p><strong style="color: #222;">"Designing High-Performance, Scalable, and Converged Middleware for HPC, AI, Big Data, and Data Sciences"</strong></p>
-			<p>This talk will focus on challenges and opportunities in designing converged middleware for HPC, AI (Deep/Machine Learning), Big Data, and Data Science. We will start with the challenges in designing runtime environments for MPI+X programming models by considering support for multi-core systems, high-performance networks (InfiniBand, RoCE, Slingshot), GPUs (NVIDIA, AMD, and Intel), and emerging BlueField-3 DPUs. Features and sample performance numbers of using the MVAPICH2 libraries over a range of benchmarks will be presented. Performance engineering of HPC applications with TAU and INAM profiling software will be highlighted. For the Deep/Machine Learning domain, we will focus on MPI-driven solutions (MPI4DL) and Mix-and-match Communication Runtime (MCR-DL) to extract performance and scalability for popular Deep Learning frameworks (TensorFlow and PyTorch), large out-of-core models, Bluefield-3 DPUs, and parallel inferencing. Performance engineering of Deep Learning Training applications with a novel Deep Introspection framework will be highlighted. Finally, we will focus on MPI-driven solutions to accelerate Big Data applications (MPI4Spark) and data science applications (MPI4Dask) with appropriate benchmark results will be presented.</p> 
+                    	<p><strong style="color: #222;">"Dataflow under the von Neumann Machine: A New Paradigm for Computing Systems"</strong></p>
+			<p>With the exponential growth of big data and AI, computing has become data-centric, making data management the top priority in computing systems. Traditional I/O and storage paradigms no longer meet the demands of data-centric computing. A paradigm shift is necessary to seamlessly integrate high-performance computing power with the velocity, volume, and variety of data to serve diverse AI needs. This keynote explores the critical challenges and introduces a new paradigm, named Dataflow under the von Neumann machine (DataflowV). We first present the Concurrent-AMAT (C-AMAT) model, which quantifies the benefits of concurrent data access and reveals the relationship between data locality and concurrency. Next, we introduce the Layer Performance Matching (LPM) framework to optimize memory system performance and formally introduce the concept of DataflowV. We then share some of our recent practices and successes with the DataflowV paradigm, including the Hermes multi-tiered I/O buffering system and others. Finally, we discuss fundamental issues of performance modeling and data-centric rethinking. The C-AMAT model provides a way to bridge the performance gap at each layer of the memory hierarchy. The LPM framework offers a methodology to optimize a memory system through smart layer optimization. They are powerful, but many fundamental questions remain open. Have we fully utilized modern hardware advances to reach their full potential? Should advanced memory systems be built under a “concurrent-aware locality” model? etc.?</p> 
 			
-			<p>Prof. DK Panda from Ohio State University. DK Panda is a Professor and University Distinguished Scholar of Computer Science and Engineering at the Ohio State University.  He is serving as the Director of the ICICLE NSF-AI Institute (https://icicle.ai). He has published over 500 papers. The MVAPICH2 MPI libraries, designed and developed by his research group (http://mvapich.cse.ohio-state.edu), are currently being used by more than 3,300 organizations worldwide (in 90 countries). More than 1.77 million downloads of this software have taken place from the project's site. This software empowers many clusters on the TOP500 list. High-performance and scalable solutions for Deep Learning frameworks and Machine Learning applications from his group are available at https://hidl.cse.ohio-state.edu. Similarly, scalable and high-performance solutions for Big Data and Data science frameworks are available from https://hibd.cse.ohio-state.edu. Prof. Panda is an IEEE Fellow and recipient of the 2022 IEEE Charles Babbage Award. More details about Prof. Panda are available at http://www.cse.ohio-state.edu/~panda.</p>
-			<!-- <p><a href="files/hoefler-permavost-dace-python.pdf">Presentation slides</a></p> -->
+			<p>Dr. Xian-He Sun is a University Distinguished Professor, the Ron Hochsprung Endowed Chair of Computer Science, and the director of the Gnosis Research Center for accelerating data-driven discovery at the Illinois Institute of Technology (Illinois Tech). Before joining Illinois Tech, he worked at DoE Ames National Laboratory, at ICASE, NASA Langley Research Center, at Louisiana State University, Baton Rouge, and was an ASEE fellow at Navy Research Laboratories. Dr. Sun is an IEEE fellow and is known for his memory-bounded speedup model, also called Sun-Ni’s Law, for scalable computing. His research interests include high-performance data processing, memory and I/O systems, and performance evaluation and optimization. He has over 350 publications and 7 patents in these areas and is currently leading multiple large software development projects in high performance I/O systems. Dr. Sun is the Editor-in-Chief of the IEEE Transactions on Parallel and Distributed Systems, and a former department chair of the Computer Science Department at Illinois Tech. He received the Golden Core award from IEEE CS society in 2017, the ACM Karsten Schwan Best Paper Award from ACM HPDC in 2019, and the first prize best paper award from ACM/IEEE CCGrid in 2021. More information about Dr. Sun can be found on his web site www.cs.iit.edu/~sun/.</p>
 			<br/>
 			    
 			<h3>Invited Speech:</h3>
 			<table>
 				<tr>
-					<td style="width: 120px;padding: 7px 0;"><img src="img/mbode.png" width="100px" style="border-radius:50%"></img></td><td>
-					<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Mathis Bode</strong></p>
-					<p style="margin:0px;">Jülich Supercomputing Centre</p>
+					<td style="width: 120px;padding: 7px 0;"><img src="img/hager.png" width="100px" style="border-radius:50%"></img></td><td>
+					<p style="font-size: 24px; margin-bottom: 5px; padding-bottom: 0px;"><strong>Georg Hager</strong></p>
+					<p style="margin:0px;">Erlangen National High Performance Computing Center, Germany</p>
 					</td>
 				</tr>
 			</table>
-			<p><strong style="color: #222;">"JUPITER Research and Early Access Program (JUREAP) – Seeding Exascale in Europe!"</strong></p>
-			<p>The JUPITER Research and Early Access Program (JUREAP) will support early applications on JUPITER to utilize the machine most efficiently. We are building up and extending on experiences with previous systems at JSC to implement a holistic program. JUREAP will target collaboration with about 20 applications on JUPITER that are balanced in terms of methods (including AI) and scientific domains. JSC experts and application scientists will support optimization of use-cases to enable highly efficient execution and push the boundaries of high-performance computing (HPC) beyond the state of the art. JUREAP will not only enable full-scale runs, but also support their execution, analysis, and joint publications. This talk summarizes the current developments and plans in the context of JUREAP. It will also provide a general overview of JUPITER.
-</p>
-			<p>Mathis is a researcher at the Jülich Supercomputing Centre (JSC) at Forschungszentrum Jülich (FZJ) and head of JUREAP. He has a background in large-scale multi-physics simulations and artificial intelligence, particularly with application to turbulence, combustion and multiphase flows, and general HPC research. In particular, he is currently working on exascale simulations and workflows. His research has won several awards, and he has been PI in various European projects.
-</p>											
+										
 			<br/>
 			    
 			<h3>Paper Presentation:</h3>
 			<ul>
-				<li><strong>Cost-Efficient Construction of Performance Models</strong> - L. Schmid, T. Sağlam, M. Selzer, A. Koziolek</li>
-				<li><strong>Benchmarking Machine Learning Applications on Heterogeneous Architecture using Reframe</strong> - C. Rae, J. Lee, J. Richings, M. Weiland</li>
-				<li><strong>Using Benchmarking and Regression Models for Predicting CNN Training Time on a GPU</strong> - P. Bryzgalov, T. Maeda</li>
+			    <li><strong>Assigning Cartesian Grid Area to Processes</strong> - A. Astier, D. Sohier, A. Capra</li>
+			    <li><strong>Performance Evaluation of Machine Learning Applications Using WebAssembly Across Different Programming Languages</strong> - S. Khan, T. Malik, K. Hasanov</li>
+			    <li><strong>Factors Impacting I/O Time Proportion in AI Workloads</strong> - Z. Masih, R. Liem, J. Kunkel</li>
+			    <li><strong>Thicket Workflow for Classifying Parallel Sorting Algorithms</strong> - M. McKinsey, D. Yokelson, S. Lam, S. Brink, O. Pearce</li>
 			</ul>
 			<p>*The paper presentation will be followed by Q&A session</p>
 			</section>
