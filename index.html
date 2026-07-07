@@ -116,10 +116,16 @@
 							</td>
 						</tr>
                     </table>
-                    <!--     <p><strong style="color: #222;">"Dataflow under the von Neumann Machine: A New Paradigm for Computing Systems"</strong></p> -->
-                    <!--     <p>With the exponential growth of big data and AI, computing has become data-centric, making data management the top priority in computing systems. Traditional I/O and storage paradigms no longer meet the demands of data-centric computing. A paradigm shift is necessary to seamlessly integrate high-performance computing power with the velocity, volume, and variety of data to serve diverse AI needs. This keynote explores the critical challenges and introduces a new paradigm, named Dataflow under the von Neumann machine (DataflowV). We first present the Concurrent-AMAT (C-AMAT) model, which quantifies the benefits of concurrent data access and reveals the relationship between data locality and concurrency. Next, we introduce the Layer Performance Matching (LPM) framework to optimize memory system performance and formally introduce the concept of DataflowV. We then share some of our recent practices and successes with the DataflowV paradigm, including the Hermes multi-tiered I/O buffering system and others. Finally, we discuss fundamental issues of performance modeling and data-centric rethinking. The C-AMAT model provides a way to bridge the performance gap at each layer of the memory hierarchy. The LPM framework offers a methodology to optimize a memory system through smart layer optimization. They are powerful, but many fundamental questions remain open. Have we fully utilized modern hardware advances to reach their full potential? Should advanced memory systems be built under a “concurrent-aware locality” model? etc.?</p>  -->
+                    
+					<p><strong style="color: #222;">"Workflow Performance Is Not the Sum of Its Parts"</strong></p>
+                    <p>Performance and progress have long been synonymous in the world of high-performance computing: a faster system was a better system, so performance tools and benchmarks were an effective way to predict how productive a supercomputer could be. This held because models were fixed, and computers only had to execute them quickly. Data-driven discovery (and AI) breaks this equivalency, because models must be trained and refined while they produce output. A machine can run at full speed while making no progress at all, because today's performance tools measure speed, not progress.
+</p>
+					<p>This forces a change in how performance must be measured. Because their models evolve over time, AI workflows have a far more complex relationship with infrastructure than traditional simulation, one that must be understood end-to-end, not layer by layer. Using production examples, I will show how individual components can each perform optimally in isolation while the composed system still runs data-driven workflows inefficiently. Performance is not the sum of its parts, and I will offer a few directions in which performance analysis tooling might need to evolve to capture performance as it actually emerges from these interactions.
+</p>
                     <!--     <p><a href="files/hpdc25-s.pdf">Presentation slides</a></p> -->
-                    <p>Glenn K. Lockwood is the Principal Technical Strategist at VAST Data, where he focuses on the relationship between AI workload mechanics and infrastructure architecture at scale. He has designed and operated some of the world's largest computing systems across multiple contexts: at Microsoft Azure, he contributed to GPU cluster architecture and reliability engineering for systems used to train some of the world's leading frontier language models, and at the National Energy Research Scientific Computing Center (NERSC), he led the design of hundreds of petabytes of data infrastructure ranging from early production all-NVMe Lustre file systems to deep tape archives. His work has spanned both on-premises supercomputers and cloud-scale infrastructure, giving him perspective on the evolution of extreme-scale computing across public and private sectors. He holds a Ph.D. in Materials Science from Rutgers University.</p>
+                    
+					<p><strong style="color: #222;">Speaker Bio:</strong></p>
+					<p>Glenn K. Lockwood is the Principal Technical Strategist at VAST Data, where he focuses on the relationship between AI workload mechanics and infrastructure architecture at scale. He has designed and operated some of the world's largest computing systems across multiple contexts: at Microsoft Azure, he contributed to GPU cluster architecture and reliability engineering for systems used to train some of the world's leading frontier language models, and at the National Energy Research Scientific Computing Center (NERSC), he led the design of hundreds of petabytes of data infrastructure ranging from early production all-NVMe Lustre file systems to deep tape archives. His work has spanned both on-premises supercomputers and cloud-scale infrastructure, giving him perspective on the evolution of extreme-scale computing across public and private sectors. He holds a Ph.D. in Materials Science from Rutgers University.</p>
                     
 					<br/>
                     
@@ -133,25 +139,12 @@
 							</td>
 						</tr>
                     </table>
-                    <!--     <p><strong style="color: #222;">"Towards a Workflow for Analytic Performance, Power, and Energy Models"</strong></p> -->
-                    <!--     <p>White- and gray-box performance models are invaluable for assessing -->
-                    <!--     resource and scalability bottlenecks in parallel programs. More often -->
-                    <!--     than not, authors of simulation software have no idea about the -->
-                    <!--     interactions of their software with the hardware, let alone its power -->
-                    <!--     and energy consumption behavior. Analytic, predictive white-box models -->
-                    <!--     such as Roofline are tremendously helpful for exposing relevant -->
-                    <!--     bottlenecks, but they are tedious to set up because hardly any tool -->
-                    <!--     support exists. I will give an overview of different modeling -->
-                    <!--     approaches, ranging from black-box (curve-fitting, machine learning) -->
-                    <!--     approaches to fully analytic models based on first principles. This -->
-                    <!--     large spectrum of possibilities bears some potential for automation, -->
-                    <!--     even if we restrict ourselves to white-box variants. I will point out -->
-                    <!--     what we already have and what is still missing in this area. Finally, -->
-                    <!--     I will give an overview of interesting dynamic application behavior -->
-                    <!--     that can get in the way of predictive modeling.</p> -->
-                    <!--     <p><a href="files/2025-07-20_PERMAVOST_GHa_modeling.pdf">Presentation slides</a></p> -->
-                    
-					<p>Bogdan Nicolae is a Computer Scientist at Argonne National Laboratory, USA. In the past, he held appointments at Huawei Research Germany and IBM Research Ireland. He specializes in scalable storage, data management and fault tolerance for large scale distributed systems, with a focus on high performance architectures cloud computing. He holds a PhD from University of Rennes 1, France and a Dipl. Eng. degree from Politehnica University Bucharest, Romania. He is interested by and authored numerous papers in the areas of scalable I/O, checkpointing techniques, data and metadata decentralization and availability, multi-versioning, data-intensive and big data analytics, storage elasticity and virtualization, live migration. </p>
+                        <p><strong style="color: #222;">"Performance Analysis for LLM Inference: Key Metrics, Patterns, and Opportunities"</strong></p>
+                    	<p>As AI becomes a primary instrument of scientific discovery and powers agentic, reasoning-driven workflows under initiatives such as the DOE Genesis Mission, inference has overtaken training as the dominant and most cost-sensitive AI workload. At its core sits the KV cache: the data structure that makes inference fast, and the bottleneck that makes it complex. Batching, paged attention, eviction, and parallelism interact in non-obvious, workload-dependent ways, so better systems cannot be designed by intuition, they must be measured. This talk discusses the role of performance analysis in this context and hints at a practical methodology: understand the system, collect the right metrics at the right granularity, and guard against the performance pitfalls, notably low-overhead monitoring. Drawing on recent studies of KV caching and inference scaling, it shows how detailed analysis exposes key patterns and performance pitfalls, turning them into concrete solutions for faster, more scalable LLM inference.
+</p>
+            
+						<p><strong style="color: #222;">Speaker Bio:</strong></p>
+						<p>Bogdan Nicolae is a Computer Scientist at Argonne National Laboratory, USA. In the past, he held appointments at Huawei Research Germany and IBM Research Ireland. He specializes in scalable storage, data management and fault tolerance for large scale distributed systems, with a focus on high performance architectures cloud computing. He holds a PhD from University of Rennes 1, France and a Dipl. Eng. degree from Politehnica University Bucharest, Romania. He is interested by and authored numerous papers in the areas of scalable I/O, checkpointing techniques, data and metadata decentralization and availability, multi-versioning, data-intensive and big data analytics, storage elasticity and virtualization, live migration. </p>
                     
 					<br/>
                     <!---->
